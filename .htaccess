@@ -1,0 +1,13 @@
+RewriteEngine On
+
+RewriteRule ^atendimento/?$ atendimento.php
+RewriteRule ^admin/?$ admin_fila.php
+RewriteRule ^admin_fila/?$ admin_fila.php
+RewriteRule ^login/?$ login.php
+RewriteRule ^/?$ index.php
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [L]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^\.]+)$ $1.html [L]
