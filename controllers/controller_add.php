@@ -12,13 +12,13 @@
     date_default_timezone_set('America/Sao_Paulo');
     $data = date("d-m-Y H:i:s");
 
-    if(file_exists('fila.json'))  
+    if(file_exists('./fila.json'))  
     {  
 
-        $abre_arquivo_fila = file_get_contents('fila.json');  
+        $abre_arquivo_fila = file_get_contents('./fila.json');  
         $array_fila = json_decode($abre_arquivo_fila, JSON_UNESCAPED_UNICODE);
 
-        $abre_arquivo_contador = file_get_contents('contador.json');  
+        $abre_arquivo_contador = file_get_contents('./contador.json');  
         $array_contador = json_decode($abre_arquivo_contador, JSON_UNESCAPED_UNICODE);
 
         $id = 0;
@@ -47,11 +47,11 @@
         $array_contador = array();
         $array_contador[] = $contador;
 
-        $escreve_arquivo_fila = fopen('fila.json', 'w');
+        $escreve_arquivo_fila = fopen('./fila.json', 'w');
         fwrite($escreve_arquivo_fila, json_encode($array_fila, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
         fclose($escreve_arquivo_fila);
 
-        $escreve_arquivo_contador = fopen('contador.json', 'w');
+        $escreve_arquivo_contador = fopen('./contador.json', 'w');
         fwrite($escreve_arquivo_contador, json_encode($array_contador, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
         fclose($escreve_arquivo_contador);
 
