@@ -30,6 +30,24 @@
 				<img src="imagens/3logotipos_coloridos.png" class="logo">
 			</div>
     </div> -->
+    <div class="row">
+      <div class="col-12">
+
+        <div style="float:left;">
+          Atendimentos hoje: 
+          <span id="atendimentos_hoje"></span> 
+          / 
+          <input type="text" style="width: 40px; padding-left:5px;" id="atendimentos_max" onchange="alterar_limitador(this.value)" value="" />
+        </div>
+
+        <div style="float:right;">
+          <button onclick="logout()" class="btn btn-dark">
+            <i class="fa fa-sign-out"  aria-hidden="true"></i> Logout
+          </button>
+        </div>
+
+      </div>
+    </div>
 
     <div class="row">
         <div class="col-md-6" id="chamado" style="width: 21.5em;margin:0 auto; text-align: center;">

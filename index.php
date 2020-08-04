@@ -32,14 +32,13 @@
 		</div>
 
 		<div class="row">
-			<div class="col-12" style="text-align: center;">
+			<div class="col-12" id="solicitacao" style="text-align: center;">
 				<a href="./atendimento" style="color:#fff; text-decoration:none;">
 					<button class="btn btn-primary" style="width: 50%; padding: 12px; font-size: 2.0vw;">
 						<i class="fa fa-plus-circle" aria-hidden="true"></i> Solicitar Atendimento
 					</button>
 				</a>
 			</div>
-			
 		</div>
 
 		<br/>
@@ -77,17 +76,9 @@
 			</div>
 		</div>
 
-		<!-- 
-		<div class="row">
-			<div class="col-xs-4 col-xs-offset-4 ultimaSenha">
-				<br>
-				<span id="ultimaSenhaTexto">ÚLTIMA CHAMADA</span><br>
-				<span>Senha </span>
-				<span id="ultimaSenhaNumero">0000</span>
-			</div>
-		</div>
-		-->
+
 	</div>
 	<audio id="audioChamada" src="audio/chamada.wav"></audio>
+	
 </body>
 </html>

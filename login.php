@@ -35,10 +35,10 @@
 			<div class="row">
                 <div class="col-2"></div>
 				<div class="col-4" style="text-align: center;">
-					<input type="text" class="campoTxt form-control" id="login" placeholder="Login">
+					<input type="text" class="campoTxt form-control" value="" id="login" placeholder="Login">
 				</div>
 				<div class="col-4" style="text-align: center;">
-					<input type="password" class="campoTxt form-control" id="senha_inea_fila" placeholder="Senha">
+					<input type="password" class="campoTxt form-control" value="" id="senha_inea_fila" placeholder="Senha">
                 </div>
             </div>
             <br/>
